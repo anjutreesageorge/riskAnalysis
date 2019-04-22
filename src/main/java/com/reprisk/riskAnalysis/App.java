@@ -30,7 +30,7 @@ public class App {
 
 		List<Company> companyList;
 
-		Map<String, List<Company>> xmlCompanyMap = new HashMap<String, List<Company>>();
+		Map<String, List<Company>> xmlCompanyMap = new ConcurrentHashMap<String, List<Company>>();
 
 		try {
 			// get the list of companies
